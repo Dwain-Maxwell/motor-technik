@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Motor Technik, Kirkcaldy-Fife</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+
+	<!-- JavaScript -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollTo-1.4.3.1.js"></script>
+	
+    <!-- IE8 responsive features -->
+    <script src="js/respond.min.js"></script>
+
+	<script>
+		$('.navbar').scrollspy();
+		
+		$(document).ready(function() {
+
+			$('#home').click(function () {
+
+				$.scrollTo('#home-container', 800);		
+
+				return false;
+			});
+				
+			$('#about').click(function () {
+
+				$.scrollTo('#about-container', 800);		
+
+				return false;
+			});
+				
+			$('#contact').click(function () {
+
+				$.scrollTo('#contact-container', 800);		
+
+				return false;
+			});
+		});
+	</script>
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar">
+	
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+	  <div class="container">
+
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse ">
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+
+	    <!-- Logo -->
+	    <a class="navbar-brand" href="#"><img src="images/mt-logo-new.png" class="mt-logo"/></a>
+
+	    <!-- tablet-mobile navigation -->
+	    <div class="nav-collapse collapse navbar-responsive-collapse">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="#home-container" id="home">Home</a></li>
+			    <li><a href="#about-container" id="about">About</a></li>
+			    <li><a href="#contact-container" id="contact">Contact</a></li>
+			</ul>
+	    </div><!-- /.nav-collapse -->
+			<div class="social pull-right">
+				<ul class="social-networks-header">
+					<li class="sn-facebook"><a href="#"></a></li>
+					<li class="sn-twitter"><a href="#"></a></li>
+					<li class="sn-linkedin"><a href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+	  </div><!-- /.container -->
+	</div><!-- /.navbar -->
+	
+	<div id="home-container">
+			<div id="slider-container">
+			    <div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 border-bottom">
+							<h2>MOTOR <span class="blue-text">TECHNIK</span></h2>
+							<h1>BMW &amp; MINI <span class="blue-text">SPECIALISTS</span></h1>
+							<h4>IN KIRKCALDY, <span class="blue-text">SCOTLAND</span></h4>
+				 			<p class="slider-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				
+							<div class="home-slider-button">READ MORE</div><!-- /.slider-button-->
+						</div><!-- /.col-12-->	
+					</div><!-- /.row-->	
+				</div><!-- /.container-->
+				
+				<div class="slider-image">
+					<img class="img-responsive" src="images/BMW-1.png">
+				</div>
+			</div><!-- /#slider-container-->
+			
+		<div class="container">
+			<div class="row">
+			  <div class="col-12 col-sm-8 border-bottom">
+			  	<h3 class="blue-text">WELCOME</h3>
+				<P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</P>	
+				<P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</P>
+				</div>
+			 <div class="col-6 col-sm-4">
+			 	<div class="home-services">
+			 		<h3 class="blue-text">OUR SERVICES</h3>
+			        	<ul>
+				            <img src="images/blue-check.png" />
+							<li>BMW &amp; Mini Specialists</li>
+							<img src="images/blue-check.png" />
+							<li>Servicing</li>
+							<img src="images/blue-check.png" />
+							<li>Specialist Tuning</li>
+							<img src="images/blue-check.png" />
+							<li>Air Con Servicing</li>
+							<img src="images/blue-check.png" />
+							<li>General Repairs</li>
+						</ul>
+			     </div>
+			  </div>
+			</div>
+		</div>	
+	</div><!-- /#home-container-->
+	
+	<div id="about-container">
+			<div id="slider-container">
+			    <div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 border-bottom">
+							<h2>WE <span class="dark-blue-text">PROVIDE</span></h2>
+							<h1>PROFESSIONAL &amp; <span class="dark-blue-text">FAST</span></h1>
+							<h4>SERVICES FOR ALL <span class="dark-blue-text">CUSTOMERS</span></h4>
+				 			<p class="slider-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				
+							<div class="about-slider-button">READ MORE</div><!-- /.slider-button-->
+						</div><!-- /.col-12-->	
+					</div><!-- /.row-->	
+				</div><!-- /.container-->
+				
+				<div class="slider-image">
+					<img class="img-responsive" src="images/BMW-6.png">
+				</div>
+			</div><!-- /#slider-container-->
+			
+		<div class="container">
+			<div class="row">
+			  <div class="col-12 col-sm-12 border-bottom">
+			  	<h3 class="dark-blue-text">MEET THE TEAM</h3>
+			
+			    <div class="staff-member"></div>
+			    <div class="staff-member"></div>
+			    <div class="staff-member"></div>
+				<div class="staff-member"></div>
+				<div class="staff-member"></div>	
+			
+				</div>
+					<h3 class="dark-blue-text">SERVICES &amp; PRODUCTS</h3>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+			</div>
+			<div class="row">
+			  <div class="col-4 col-md-4">
+			  	<ul>
+					<li>Brakes &amp; Clutches</li>
+					<li>Brakes Repairs</li>
+					<li>Car Air Conditioning</li>
+					<li>Car Diagnostics</li>
+					<li>Car Electrics</li>
+					<li>Car Brakes</li>
+					<li>Car Engines</li>
+					<li>Car Puncture Repairs</li>
+					<li></li>
+				<ul>
+			  </div>
+			  <div class="col-4 col-md-4">4</div>
+			  <div class="col-4 col-md-4">4</div>
+			</div>
+		</div>
+	</div>
+	
+
+	
+	<div id="contact-container">
+			<div id="slider-container">
+			    <div class="container">
+					<div class="row">
+						<div class="col-12 col-sm-12 border-bottom">
+							<h2>MOTOR <span class="blue-text">TECHNIK</span></h2>
+							<h1>BMW &amp; MINI <span class="blue-text">SPECIALISTS</span></h1>
+							<h4>IN KIRKCALDY, <span class="blue-text">SCOTLAND</span></h4>
+				 			<p class="slider-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				
+							<div class="slider-button">READ MORE</div><!-- /.slider-button-->
+						</div><!-- /.col-12-->	
+					</div><!-- /.row-->	
+				</div><!-- /.container-->
+				
+				<div class="slider-image">
+					<img class="img-responsive" src="images/BMW-1.png">
+				</div>
+			</div><!-- /#slider-container-->
+			
+		<div class="container">
+			<div class="row">
+			  <div class="col-12 col-sm-8 border-bottom">
+			  	<h3 class="blue-text">WELCOME</h3>
+				<P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</P>	
+				<P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</P>
+				</div>
+			 <div class="col-6 col-sm-4">
+			 	<div class="home-services">
+			 		<h3 class="blue-text">OUR SERVICES</h3>
+			        	<ul>
+				            <img src="images/blue-check.png" />
+							<li>BMW &amp; Mini Specialists</li>
+							<img src="images/blue-check.png" />
+							<li>Servicing</li>
+							<img src="images/blue-check.png" />
+							<li>Specialist Tuning</li>
+							<img src="images/blue-check.png" />
+							<li>Air Con Servicing</li>
+							<img src="images/blue-check.png" />
+							<li>General Repairs</li>
+						</ul>
+			    </div>
+			 </div>
+			</div>
+		</div>
+	</div>
+	
+  </body>
+</html>
