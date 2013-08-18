@@ -18,6 +18,9 @@
 
 	<!-- Google maps API call -->
 	<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	
+	<!-- jQuery validation plugin -->
+	<script src="js/jquery.validate.min.js" type="text/javascript" charset="utf-8"></script>
 
 	<script>
 
@@ -85,6 +88,33 @@
 				$.scrollTo('#contact-container', 800);		
 
 				return false;
+			});
+			
+			$('#contact-form').validate({
+				rules: {
+					name: {
+						minlength: 2,
+						required: true
+					},
+					email: {
+						required: true,
+						email: true
+					},
+					queries: {
+						minlength: 2,
+						required: false
+					}
+				},
+				highlight: function(element) {
+			$(element).closest('.control-group').removeClass('success').addClass('error');
+				},
+				success: function(element) {
+					element.text('OK!').addClass('valid')
+					.closest('.control-group').removeClass('error').addClass('success');
+				}
+			});
+			$('.btn-reset').click(function(){
+				$('label.valid, label.error').hide();
 			});
 		});
 	</script>
@@ -414,18 +444,18 @@
 			</div>
 			<div class="row" id="contact-feat-spacing">
 			  <div class="col-12 col-sm-6 border-bottom">
-				<form role="form">
+				<form role="form" id="contact-form">
 				  <div class="form-group">
 				    <label for="name">Name:</label>
-				    <input type="name" class="form-control" placeholder="Enter Name...">
+				    <input type="text" name="name" id="name" class="form-control">
 				  </div>
 				  <div class="form-group">
 				    <label for="email">E-Mail:</label>
-				    <input type="email" class="form-control" placeholder="Enter Email...">
+				    <input type="text" name="email" id="email" class="form-control">
 				  </div>
 				  <div class="form-group">
-				    <label for="comments">Queries?</label>
-				    <textarea class="form-control" rows="3" placeholder="Any Queries here..."></textarea>
+				    <label for="queries">Queries?</label>
+				    <textarea class="form-control" name="queries" id="queries" rows="3" ></textarea>
 				  </div>
 				
 				  <button type="submit" class="btn btn-default">SUBMIT</button>
@@ -436,38 +466,43 @@
 			 <div class="col-12 col-sm-5">
 			 	<div id="map-canvas"></div>
 			</div>
-			
 			</div>
 		</div>
 	</div>
 	
 	<footer class="footer">
 		<div class="container">
-		<div class="row footer-row">
-		  <div class="col-12 col-sm-3">
-			<h5>ADDRESS</h5>
-			<p>Unit 6<br/>
-			Mitchelston Drive,<br/>
-			Mitchelston Industrial Estate,<br/>
-			Kirkcaldy, Fife<br/>
-			KY1 3NF</p>
-		  </div>
-		  <div class="col-12 col-sm-4">
-			<h5>CONTACT</h5>
-			<p>TEL: (01592) 651250<br/>
-			MOB: (01592) 651250<br/>
-			Email: someone@somedomain.com</p>
-			<div class="social-footer">
-				<ul class="social-networks-footer">
-					<li class="sn-facebook"><a href="#">Like</a></li>
-					<li class="sn-twitter"><a href="#">Follow</a></li>
-					<li class="sn-linkedin"><a href="#">Connect</a></li>
-				</ul>
+			<div class="row footer-row">
+			  <div class="col-12 col-sm-3">
+				<h5><strong>ADDRESS</strong></h5>
+				<p>Unit 6<br/>
+				Mitchelston Drive,<br/>
+				Mitchelston Industrial Estate,<br/>
+				Kirkcaldy, Fife<br/>
+				KY1 3NF</p>
+			  </div>
+			  <div class="col-12 col-sm-4">
+				<h5><strong>CONTACT</strong></h5>
+				<p>TEL: (01592) 651250<br/>
+				MOB: (01592) 651250<br/>
+				Email: someone@somedomain.com</p>
+				<div class="social-footer">
+					<ul class="social-networks-footer">
+						<li class="sn-facebook"><a href="#">Like</a></li>
+						<li class="sn-twitter"><a href="#">Follow</a></li>
+						<li class="sn-linkedin"><a href="#">Connect</a></li>
+					</ul>
+				</div>
+			  </div>
+			  <div class="col-12 col-sm-4">
+				<img class="back-to-top-img" src="images/BMW-3.png"/>
+			  </div>
 			</div>
-		  </div>
-		  <div class="col-12 col-sm-4">
-			<img class="back-to-top-img" src="images/BMW-3.png"/>
-		  </div>
+			<div class="row">
+				<div class="col-12">
+				<p class="copyright">COPYRIGHT &copy; MOTOR TECHNIK 2013 - Web Design and Development By Dwain and Lee Maxwell</p>		
+				</div>
+			</div>
 		</div>
 	</footer>
   </body>
