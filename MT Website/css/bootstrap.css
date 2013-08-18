@@ -1032,16 +1032,48 @@ pre code {
 	margin-top:30px;
 }
 
-.google-map-link{
-	color:#E6291E;
+#map-canvas{
+	display: block;
+    width: 100%;
+	height:300px;
+}
+#google-maps-info-window{
+	width:230px;
+	height:150px;
+	padding:10px;
+	border-radius:5px;
+	background: rgb(86,86,86); /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzU2NTY1NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg2JSIgc3RvcC1jb2xvcj0iIzJkMmQyZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(top,  rgba(86,86,86,1) 0%, rgba(45,45,45,1) 86%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(86,86,86,1)), color-stop(86%,rgba(45,45,45,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(86,86,86,1) 0%,rgba(45,45,45,1) 86%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(86,86,86,1) 0%,rgba(45,45,45,1) 86%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(86,86,86,1) 0%,rgba(45,45,45,1) 86%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(86,86,86,1) 0%,rgba(45,45,45,1) 86%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#565656', endColorstr='#2d2d2d',GradientType=0 ); /* IE6-8 */
+}
+#google-maps-logo{
+	padding-bottom:7.5px;
+}
+#google-maps-address p{
+	color:#fff;
+	padding:0;
+	line-height:10px;
+}
+
+#google-maps-address a{
 	text-decoration:none;
 }
-.google-map-link:hover,
-.google-map-link:focus,
-.google-map-link:active,
-.google-map-link.active{
-	color:#333;
-	text-decoration:none;
+
+iframe,   
+object,  
+embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /*---- Footer Styles ----*/
