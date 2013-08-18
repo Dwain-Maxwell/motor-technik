@@ -89,7 +89,7 @@
 
 				return false;
 			});
-			
+		
 			$('#contact-form').validate({
 				rules: {
 					name: {
@@ -116,6 +116,38 @@
 			$('.btn-reset').click(function(){
 				$('label.valid, label.error').hide();
 			});
+
+			$('.back-top').click(function () {
+
+				$.scrollTo('#home-container', 800);		
+
+				return false;
+			});
+			
+			$(".back-top").hover(
+			  function () {
+			    $(".back-to-top-img").addClass("back-to-top-img-on");
+			    $(".back-to-top-img").stop().animate({
+					"opacity": "0.7",
+					"-ms-filter": "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)",
+					"filter": "alpha(opacity=70)",
+					"-moz-opacity": "0.7",
+					"-khtml-opacity": "0.7" 
+				}, 
+					"slow");
+			  },
+			  function () {
+			    $(".back-to-top-img").removeClass("back-to-top-img-on");
+				$(".back-to-top-img").stop().animate({
+					"opacity": "0.3",
+					"-ms-filter": "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)",
+					"filter": "alpha(opacity=30)",
+					"-moz-opacity": "0.3",
+					"-khtml-opacity": "0.3" 
+				}, 
+					"slow");
+			  }
+			);
 		});
 	</script>
   </head>
@@ -468,6 +500,7 @@
 			</div>
 			</div>
 		</div>
+		<div class="back-top">BACK TO TOP</div>
 	</div>
 	
 	<footer class="footer">
