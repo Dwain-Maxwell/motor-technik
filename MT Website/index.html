@@ -113,6 +113,9 @@
 					.closest('.control-group').removeClass('error').addClass('success');
 				}
 			});
+			$('.btn-reset').click(function(){
+				$('label.valid, label.error').hide();
+			});
 		});
 	</script>
   </head>
@@ -444,15 +447,15 @@
 				<form role="form" id="contact-form">
 				  <div class="form-group">
 				    <label for="name">Name:</label>
-				    <input type="text" name="name" id="name" class="form-control" placeholder="Enter Name...">
+				    <input type="text" name="name" id="name" class="form-control">
 				  </div>
 				  <div class="form-group">
 				    <label for="email">E-Mail:</label>
-				    <input type="text" name="email" id="email" class="form-control" placeholder="Enter Email...">
+				    <input type="text" name="email" id="email" class="form-control">
 				  </div>
 				  <div class="form-group">
 				    <label for="queries">Queries?</label>
-				    <textarea class="form-control" name="queries" id="queries" rows="3" placeholder="Any Queries here..."></textarea>
+				    <textarea class="form-control" name="queries" id="queries" rows="3" ></textarea>
 				  </div>
 				
 				  <button type="submit" class="btn btn-default">SUBMIT</button>
@@ -471,7 +474,7 @@
 		<div class="container">
 			<div class="row footer-row">
 			  <div class="col-12 col-sm-3">
-				<h5>ADDRESS</h5>
+				<h5><strong>ADDRESS</strong></h5>
 				<p>Unit 6<br/>
 				Mitchelston Drive,<br/>
 				Mitchelston Industrial Estate,<br/>
@@ -479,7 +482,7 @@
 				KY1 3NF</p>
 			  </div>
 			  <div class="col-12 col-sm-4">
-				<h5>CONTACT</h5>
+				<h5><strong>CONTACT</strong></h5>
 				<p>TEL: (01592) 651250<br/>
 				MOB: (01592) 651250<br/>
 				Email: someone@somedomain.com</p>
