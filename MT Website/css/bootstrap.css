@@ -1300,7 +1300,6 @@ label.error {
 .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
 }
 
 .col-1,
@@ -5502,20 +5501,20 @@ td.visible-print {
 		margin-top:60px;
 	}
 	
+	.social-header{
+		display:none;
+	}
 	
+	#map-canvas{
+		margin-top:50px;
+	}
 	
 	.border-top{
 		border-top:1px solid #CCC;
 	}
 }
 
-@media screen and (max-width: 767px){
-	.social-header{
-		display:none;
-	}
-}
-
- @media screen and (max-width: 675px){
+@media screen and (max-width: 675px){
 	h1,
 	.h1 {
 	  font-size:50px;
